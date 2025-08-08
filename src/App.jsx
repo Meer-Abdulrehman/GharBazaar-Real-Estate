@@ -8,7 +8,7 @@ import Header from './components/Header'
 import SignUp from './pages/SignUp'
 import PrivateRoute from './components/PrivateRoute'; 
 import UpdateListing from './pages/UpdateListing'
-import Listing from './pages/listing'
+import Listing from './pages/Listing.jsx'
 import CreateListing from './pages/CreateListing'
 import Search from './pages/Search'
 function App() {
