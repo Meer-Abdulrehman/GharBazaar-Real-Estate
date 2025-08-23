@@ -59,7 +59,7 @@ export default function CreateListing() {
     const formData = new FormData();
     formData.append('image', file);
 
-    const res = await fetch('http://localhost:3000/api/upload', { // ✅ same as route
+    const res = await fetch('https://real-estate-backend-2-3jmf.onrender.com/api/upload', { // ✅ same as route
       method: 'POST',
       body: formData,
     });
@@ -71,7 +71,7 @@ export default function CreateListing() {
     }
 
     // ✅ preview URL exactly backend ke according
-    return `http://localhost:3000/uploads/${data.fileName}`;
+    return `https://real-estate-backend-2-3jmf.onrender.com/uploads/${data.fileName}`;
   } catch (err) {
     throw err;
   }
