@@ -9,7 +9,7 @@ import SignUp from './pages/SignUp.jsx'
 import PrivateRoute from './components/PrivateRoute.jsx'; 
 import UpdateListing from './pages/UpdateListing.jsx'
 import Listing from './pages/Listing.jsx'
-import CreateListing from './pages/CreateListing.jsx'
+import CreateListing from './pages/createListing.jsx'
 import Search from './pages/Search.jsx'
 function App() {
   return (
