@@ -26,9 +26,9 @@ export default function Home() {
         setLoading(true);
         setError(null);
 
-        const offerRes = fetch('https://real-estate-backend-2-3jmf.onrender.com/api/listing/get?offer=true&limit=4');
-        const rentRes = fetch('https://real-estate-backend-2-3jmf.onrender.com/api/listing/get?type=rent&limit=4');
-        const saleRes = fetch('https://real-estate-backend-2-3jmf.onrender.com/api/listing/get?type=sale&limit=4');
+        const offerRes = fetch('https://ghar-bazaar-real-estate-backend.vercel.app/api/listing/get?offer=true&limit=4');
+        const rentRes = fetch('https://ghar-bazaar-real-estate-backend.vercel.app/api/listing/get?type=rent&limit=4');
+        const saleRes = fetch('https://ghar-bazaar-real-estate-backend.vercel.app/api/listing/get?type=sale&limit=4');
 
         const [offerDataRes, rentDataRes, saleDataRes] = await Promise.all([
           offerRes,
